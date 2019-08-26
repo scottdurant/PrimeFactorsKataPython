@@ -1,11 +1,12 @@
 import unittest
-import PrimeFactors
+import PrimeFactors as PrimeFactorsClass
 
 
 class TestPrimeFactors(unittest.TestCase):
-    def test_zero_returns_zero(self):
+    def test_one_returns_empty_list(self):
         expected = []
-        actual = []
+        pf = PrimeFactorsClass
+        actual = pf.PrimeFactors.calculate_primes(self, 0)
 
         self.assertEqual(expected, actual)
 
