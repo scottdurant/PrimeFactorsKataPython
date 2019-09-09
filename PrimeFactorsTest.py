@@ -17,6 +17,14 @@ class TestPrimeFactors(unittest.TestCase):
 
         self.assertEqual(expected, actual)
 
+    def test_three_returns_just_three(self):
+        expected = [3]
+        pf = PrimeFactorsClass
+        actual = pf.PrimeFactors.calculate_primes(self, 3)
+
+        self.assertEqual(expected, actual)
+
+
 
 if __name__ == '__main__':
     unittest.main()
