@@ -6,7 +6,7 @@ class TestPrimeFactors(unittest.TestCase):
     def test_one_returns_empty_list(self):
         expected = []
         pf = PrimeFactorsClass
-        actual = pf.PrimeFactors.calculate_primes(self, 0)
+        actual = pf.PrimeFactors.calculate_primes(self, 1)
 
         self.assertEqual(expected, actual)
 
