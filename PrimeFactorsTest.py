@@ -24,6 +24,13 @@ class TestPrimeFactors(unittest.TestCase):
 
         self.assertEqual(expected, actual)
 
+    def test_four_returns_two_and_two(self):
+        expected = [2, 2]
+        pf = PrimeFactorsClass
+        actual = pf.PrimeFactors.calculate_primes(self, 4)
+
+        self.assertEqual(expected, actual)
+
 
 
 if __name__ == '__main__':
