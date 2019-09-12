@@ -31,6 +31,20 @@ class TestPrimeFactors(unittest.TestCase):
 
         self.assertEqual(expected, actual)
 
+    def test_eight_returns_two_two_and_two(self):
+        expected = [2, 2, 2]
+        pf = PrimeFactorsClass
+        actual = pf.PrimeFactors.calculate_primes(self, 8)
+
+        self.assertEqual(expected, actual)
+
+    def test_ten_returns_two_and_five(self):
+        expected = [2, 5]
+        pf = PrimeFactorsClass
+        actual = pf.PrimeFactors.calculate_primes(self, 10)
+
+        self.assertEqual(expected, actual)
+
 
 
 if __name__ == '__main__':
