@@ -10,12 +10,11 @@ class PrimeFactors:
         if given_number == 1:
             return result
 
-        while given_number != 1:
+        while given_number >= divisor:
             if given_number % divisor == 0:
                 result.append(divisor)
                 given_number = given_number / divisor
             else:
-                result.append(given_number)
-                return result
+                divisor += 1
 
         return result
