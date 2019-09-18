@@ -15,8 +15,6 @@ class PrimeFactors:
                 result.append(divisor)
                 given_number = given_number / divisor
             else:
-                divisor = divisor + 1
-                #result.append(given_number)
-                #return result
+                divisor += 1
 
         return result
